@@ -1,0 +1,19 @@
+# Java Development Kit
+oracleJdk-27/
+
+# Compiled Java files
+*.class
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
