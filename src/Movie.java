@@ -7,7 +7,7 @@ public class Movie {
     private double ticketPrice;
     private int availableSeats;
 
-    public Movie(int movID, String movName, double dr, double tickPrice, int avSeats) {// Constructor
+    public Movie(int movID, String movName, double dr, double tickPrice, int avSeats) {
         movieId = movID;
         movieName = movName;
         duration = dr;
@@ -15,27 +15,27 @@ public class Movie {
         availableSeats = avSeats;
     }
 
-    public int getMovieId() {// getter
+    public int getMovieId() {
         return movieId;
     }
 
-    public String getMovieName() {// getter
+    public String getMovieName() {
         return movieName;
     }
 
-    public double getDuration() {// getter
+    public double getDuration() {
         return duration;
     }
 
-    public double getTicketPrice() {// getter
+    public double getTicketPrice() {
         return ticketPrice;
     }
 
-    public int getAvailableSeats() {// getter
+    public int getAvailableSeats() {
         return availableSeats;
     }
 
-    public void setTicketPrice(double tickPrice) {// setter, Setters are using to set or edit an encapsulated data
+    public void setTicketPrice(double tickPrice) {
         if (tickPrice >= 0) {
             ticketPrice = tickPrice;
         } else {
@@ -43,14 +43,14 @@ public class Movie {
         }
     }
 
-    public boolean reduceSeats(int count) {// reduce seat function
-        if (count <= 0) {// validating seats(seats cannot be minus)
+    public boolean reduceSeats(int count) {
+        if (count <= 0) {
             return false;
         }
         if (count > availableSeats) {
             return false;
         }
-        availableSeats = availableSeats - count;// reducing seats after customer book seats huttp
+        availableSeats = availableSeats - count;
         return true;
     }
 

@@ -1,23 +1,23 @@
 public class Ticket {
-    private String customerName;// Encapsulated
-    private String movieName;// Encapsulated
-    private double basePrice;// Encapsulated
+    private String customerName;
+    private String movieName;
+    private double basePrice;
 
-    public Ticket(String Tname, String movName, double bPrice) { // constructor
+    public Ticket(String Tname, String movName, double bPrice) {
         customerName = Tname;
         movieName = movName;
         basePrice = bPrice;
     }
 
-    public String getCustomerName() {// getter, Getters are using to access the encapsulated data.
+    public String getCustomerName() {
         return customerName;
     }
 
-    public String getMovieName() {// getter
+    public String getMovieName() {
         return movieName;
     }
 
-    public double getBasePrice() {// getter
+    public double getBasePrice() {
         return basePrice;
     }
 
@@ -25,11 +25,11 @@ public class Ticket {
         return basePrice;
     }
 
-    public double calculateTotalPrice(int seatCount) {// calculate total price multiply by seat count
+    public double calculateTotalPrice(int seatCount) {
         return calculatePrice() * seatCount;
     }
 
-    public void displayTicket(int seatCount) {// display ticket details function
+    public void displayTicket(int seatCount) {
         System.out.println("Customer: " + getCustomerName());
         System.out.println("Movie: " + getMovieName());
         System.out.println("Price: Rs." + calculatePrice());

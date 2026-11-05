@@ -1,11 +1,10 @@
-public class StandardTicket extends Ticket {// inherits from the parent class Ticket in Ticket.java
+public class StandardTicket extends Ticket {
 
-    public StandardTicket(String Tname, String movName, double bPrice) {// Constructor inherits since the Ticket parent
-                                                                        // class has a constructor hutto
+    public StandardTicket(String Tname, String movName, double bPrice) {
         super(Tname, movName, bPrice);
     }
 
-    @Override // polymorphism used from the Ticket.java parent class
+    @Override
     public double calculatePrice() {
         return getBasePrice();
     }

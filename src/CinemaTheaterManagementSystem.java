@@ -13,9 +13,9 @@ public class CinemaTheaterManagementSystem {
         Movie m2 = new Movie(2, "Ranja", 100, 900, 89);
         Movie m3 = new Movie(3, "ispooder man", 120, 130, 20);
 
-        movies.add(m1);// adding movies to empty arraylist yako
-        movies.add(m2);// adding movies to empty arraylist yako
-        movies.add(m3);// adding movies to empty arraylist yako
+        movies.add(m1);
+        movies.add(m2);
+        movies.add(m3);
 
         System.out.println("========================================");
         System.out.println("    CINEMA THEATRE MANAGEMENT SYSTEM    ");
@@ -30,10 +30,10 @@ public class CinemaTheaterManagementSystem {
             System.out.println("3. Exit");
             System.out.print("Enter choice: ");
 
-            choice = input.nextInt();// getting input from the user choice
+            choice = input.nextInt();
             input.nextLine();
 
-            if (choice == 1) {// showing available movies
+            if (choice == 1) {
 
                 System.out.println("\n==== Available Movies ====");
 
@@ -42,7 +42,7 @@ public class CinemaTheaterManagementSystem {
                     System.out.println(" ");
                 }
 
-            } else if (choice == 2) {// book tickets by looking the list
+            } else if (choice == 2) {
 
                 System.out.println("\n==== Available Movies ====");
 
